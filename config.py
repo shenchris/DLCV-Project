@@ -4,19 +4,19 @@ mt5_path = "./pretrained_weight/mt5-base"
 train_label_paths = {
                     "CSL_News": "./data/CSL_News/CSL_News_Labels.json",
                     "CSL_Daily": "./data/CSL_Daily/labels.train",
-                    "WLASL": "./data/WLASL/labels-2000.train"
+                    "WLASL": "./data/WLASL/labels-100.train"
                     }
 
 dev_label_paths = {
                     "CSL_News": "./data/CSL_News/CSL_News_Labels.json",
                     "CSL_Daily": "./data/CSL_Daily/labels.dev",
-                    "WLASL": "./data/WLASL/labels-2000.dev"
+                    "WLASL": "./data/WLASL/labels-100.dev"
                     }
 
 test_label_paths = {
                     "CSL_News": "./data/CSL_News/CSL_News_Labels.json",
                     "CSL_Daily": "./data/CSL_Daily/labels.test",
-                    "WLASL": "./data/WLASL/labels-2000.test"
+                    "WLASL": "./data/WLASL/labels-100.test"
                     }
 
 

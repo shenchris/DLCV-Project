@@ -14,6 +14,23 @@ from tqdm import tqdm
 from concurrent.futures import ThreadPoolExecutor
 from rtmlib import Wholebody, draw_skeleton
 
+
+import sys
+import os
+
+# ----------------- PATH FIX START -----------------
+# Get the absolute path to the directory containing the script (e.g., /home/shenchris/Uni-Sign/demo)
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Get the absolute path to the project root (one level up: /home/shenchris/Uni-Sign)
+project_root = os.path.join(current_dir, '..')
+
+# Add the project root to the system path
+sys.path.insert(0, project_root)
+# ----------------- PATH FIX END -------------------
+
+
+
 def main(args):
     print(args)
     utils.set_seed(args.seed)
